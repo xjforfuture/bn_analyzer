@@ -1,0 +1,16 @@
+FROM python:3.7.0-alpine3.8
+MAINTAINER qhyx:tsinghuanet.com
+
+COPY ./docker/requirements.txt /bn_analyzer/docker/
+COPY ./conflent-kafka /home/conflent-kafka/
+
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories \
+    && apk --no-cache add build-base libxslt-dev librdkafka-dev supervisor lapack openblas-dev\
+    && apk add --no-cache --virtual .build-deps tzdata linux-headers \
+    && pip3 install -r /bn_analyzer/docker/requirements.txt --trusted-host pypi.douban.com  -i http://pypi.douban.com/simple/ \
+    && pip3 install -U scipy scikit-learn  --trusted-host pypi.douban.com  -i http://pypi.douban.com/simple/\
+    && cd /home/conflent-kafka/ && pip3 install . && rm /home/conflent-kafka -rf \
+    && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+    && apk del .build-deps \
+    && rm -rf /root/.cache
+

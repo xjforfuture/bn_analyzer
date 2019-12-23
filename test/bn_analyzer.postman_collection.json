@@ -1,0 +1,408 @@
+{
+	"info": {
+		"_postman_id": "7c20c43b-59e1-4cde-9223-46284034af89",
+		"name": "bn_analyzer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "bn_overview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:17010/api/v1.0/bn_overview?start_time=2019-05-07 00:00:00&end_time=2019-05-08 00:00:00",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "17010",
+					"path": [
+						"api",
+						"v1.0",
+						"bn_overview"
+					],
+					"query": [
+						{
+							"key": "start_time",
+							"value": "2019-05-07 00:00:00"
+						},
+						{
+							"key": "end_time",
+							"value": "2019-05-08 00:00:00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "access_stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:17010/api/v1.0/bn_overview/access_stats?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "17010",
+					"path": [
+						"api",
+						"v1.0",
+						"bn_overview",
+						"access_stats"
+					],
+					"query": [
+						{
+							"key": "start_time",
+							"value": "2019-05-07 00:00:00",
+							"disabled": true
+						},
+						{
+							"key": "end_time",
+							"value": "2019-05-08 00:00:00",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bn_overview-session",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:17010/api/v1.0/bn_overview/session?start_time=2019-05-07 00:00:00&end_time=2019-05-08 00:00:00",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "17010",
+					"path": [
+						"api",
+						"v1.0",
+						"bn_overview",
+						"session"
+					],
+					"query": [
+						{
+							"key": "start_time",
+							"value": "2019-05-07 00:00:00"
+						},
+						{
+							"key": "end_time",
+							"value": "2019-05-08 00:00:00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bn_overview-risk_entries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:17010/api/v1.0/bn_overview/risk_entries?start_time=2019-05-07 00:00:00&end_time=2019-05-08 00:00:00&page=1&page_size=5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "17010",
+					"path": [
+						"api",
+						"v1.0",
+						"bn_overview",
+						"risk_entries"
+					],
+					"query": [
+						{
+							"key": "start_time",
+							"value": "2019-05-07 00:00:00"
+						},
+						{
+							"key": "end_time",
+							"value": "2019-05-08 00:00:00"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "session-overview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:17010/api/v1.0/session/overview?start_time=2019-05-07 00:00:00&end_time=2019-05-08 00:00:00&user_ip=&user_id=&user_name=&geolocation=",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "17010",
+					"path": [
+						"api",
+						"v1.0",
+						"session",
+						"overview"
+					],
+					"query": [
+						{
+							"key": "start_time",
+							"value": "2019-05-07 00:00:00"
+						},
+						{
+							"key": "end_time",
+							"value": "2019-05-08 00:00:00"
+						},
+						{
+							"key": "user_ip",
+							"value": ""
+						},
+						{
+							"key": "user_id",
+							"value": ""
+						},
+						{
+							"key": "user_name",
+							"value": ""
+						},
+						{
+							"key": "geolocation",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "session-model",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:17010/api/v1.0/session/model",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "17010",
+					"path": [
+						"api",
+						"v1.0",
+						"session",
+						"model"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "session-feature",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:17010/api/v1.0/session/feature?start_time=2019-05-07 00:00:00&end_time=2019-05-08 00:00:00&user_ip&lable&page&page_size",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "17010",
+					"path": [
+						"api",
+						"v1.0",
+						"session",
+						"feature"
+					],
+					"query": [
+						{
+							"key": "start_time",
+							"value": "2019-05-07 00:00:00"
+						},
+						{
+							"key": "end_time",
+							"value": "2019-05-08 00:00:00"
+						},
+						{
+							"key": "user_ip",
+							"value": null
+						},
+						{
+							"key": "lable",
+							"value": null
+						},
+						{
+							"key": "page",
+							"value": null
+						},
+						{
+							"key": "page_size",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "session-info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:17010/api/v1.0/session/info?session_id=",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "17010",
+					"path": [
+						"api",
+						"v1.0",
+						"session",
+						"info"
+					],
+					"query": [
+						{
+							"key": "session_id",
+							"value": ""
+						},
+						{
+							"key": "end_time",
+							"value": "2019-05-08 00:00:00",
+							"disabled": true
+						},
+						{
+							"key": "user_ip",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "lable",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "page_size",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "session-plot_scatter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:17010/api/v1.0/session/plot_scatter?session_id=",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "17010",
+					"path": [
+						"api",
+						"v1.0",
+						"session",
+						"plot_scatter"
+					],
+					"query": [
+						{
+							"key": "session_id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

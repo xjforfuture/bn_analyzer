@@ -1,0 +1,16 @@
+version: '3'
+services:
+  bn_analyzer:
+    image: cdqhyx.cn:8888/tianshu/bn_analyzer:release
+    container_name: bn_analyzer
+    restart: always
+    ports:
+      - "17010:17010"
+    environment:
+      - HOST_IP=${QHYX_HOST_ADDR}
+      - CONSULSRV_IP=${QHYX_CONFIG_ADDR}
+    tty: true
+    volumes:
+      - ${QHYX_DATA_DIR:-/opt/qhyx/default_data_dir}/bn_analyzer/log:/home/log/
+      - ${QHYX_DATA_DIR:-/opt/qhyx/default_data_dir}/bn_analyzer/data:/home/data/
+      - ${QHYX_DATA_DIR:-/opt/qhyx/default_data_dir}/bn_analyzer/config:/home/config/
