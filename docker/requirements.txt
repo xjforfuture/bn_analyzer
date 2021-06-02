@@ -13,5 +13,5 @@ Cython
 joblib
 numpy
 pandas        == 0.23.4
-urllib3       == 1.24.1
+urllib3       == 1.26.5
 plotly        == 3.9.0
